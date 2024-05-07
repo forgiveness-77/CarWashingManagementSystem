@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./myAdmin.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <h1>Auto Wash</h1>
+        </div>
+        <div class="search">
+            <img src="search.png" alt="">
+            <input type="search" placeholder="Search for anything here">
+        </div>
+        <div class="languages">
+            <div class="dropdown-button">English <img src="dropdown.png" alt=""></div>
+            <div class="language-list">
+                <span>French</span>
+                <span>Spanish</span>
+                <span>Kiswahili</span>
+                <span>Kinyarwahda</span>
+            </div>
+        </div>
+        <div class="greeting">
+            <h3> <img src="./icons8-sun.gif" alt="">Good morning</h3>
+            <span class="time">
+                <span>1/5/2024</span>
+                <span>11:30</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- This is side bar -->
+    <div class="side-bar">
+        <div class="profile">
+            <img src="./adminprofile.svg" alt="" width="60px">
+            <span>
+                <h4>James Altamn</h4>
+                <p>Super admin</p>
+            </span>
+            <span style="margin-left:1rem ;"><img src="./3dots.png" width="5px" alt=""></span>
+        </div>
+        <div class="pages">
+            <div onclick="showDashboard()"><img src="./replies.png" alt=""> Dashboard</div>
+            <div onclick="showFeedback()"><img src="./feedback.png" alt=""> Feedback</div>
+            <div onclick="showBooking()"><img src="./booking.png" alt=""> Booking</div>
+            <div onclick="showReports()"><img src="./reports.png" alt=""> Reports</div>
+            <hr>
+            <div onclick="showCarwash2()"><img src="./carwash.png" alt=""> Car wash</div>
+            <div onclick="showNotifications()"><img src="notification.png" alt=""> Notifications</div>
+            <div onclick="showSetting()"><img src="setting.png" alt=""> Setting</div>
+            <hr>
+            <button><img src="./logout.png" alt=""> Log out</button>
+        </div>
+    </div>
+
+    <!-- Admin dashboard 1 -->
+    <div id="carwash1">
+        <div class="photocard">
+            <div class="cadre">
+                <img src="./kigali 1.png" alt="">
+                <p>Kigale</p>
+            </div>
+            <div class="changing-buttons">
+                <button><img src="./delete.png" alt="" class="delete"></button>
+                <button><img src="./edit.png" alt="" class="edit"></button>
+            </div>
+        </div>
+        <div class="photocard">
+            <div class="cadre">
+                <img src="./kigali 1.png" alt="">
+                <p>Kigali</p>
+            </div>
+            <div class="changing-buttons">
+                <button><img src="./delete.png" alt="" class="delete"></button>
+                <button><img src="./edit.png" alt="" class="edit"></button>
+            </div>
+        </div>
+        <div class="photocard">
+            <div class="cadre">
+                <img src="./kigali 1.png" alt="">
+                <p>Kigale</p>
+            </div>
+            <div class="changing-buttons">
+                <button><img src="./delete.png" alt="" class="delete"></button>
+                <button><img src="./edit.png" alt="" class="edit"></button>
+            </div>
+        </div>
+        <div class="photocard">
+            <div class="cadre">
+                <img src="./kigali 1.png" alt="">
+                <p>Kigale</p>
+            </div>
+            <div class="changing-buttons">
+                <button><img src="./delete.png" alt="" class="delete"></button>
+                <button><img src="./edit.png" alt="" class="edit"></button>
+            </div>
+        </div>
+        <div class="photocard">
+            <div class="cadre">
+                <img src="./kigali 1.png" alt="">
+                <p>Kigale</p>
+            </div>
+            <div class="changing-buttons">
+                <button><img src="./delete.png" alt="" class="delete"></button>
+                <button><img src="./edit.png" alt="" class="edit"></button>
+            </div>
+        </div>
+        <form>
+            <span class="input">
+                <label for="">New location</label>
+                <input type="text">
+            </span>
+            <span class="input">
+                <label for="">Update Location</label>
+                <input type="text">
+            </span>
+            <button onclick="showCarwash2()" type="submit">Save Location</button>
+        </form>
+    </div>
+
+    <!-- Dashboard 2 -->
+    <div id="carwash2">
+        <div class="dashboard2-head">
+            <h2>Car wash</h2>
+            <p>This is a quick review of the total cars in wash</p>
+        </div>
+
+        <div class="adding-button">
+            <button onclick="showCarwash3()"> Add new booking</button>
+            <button onclick="showCarwash1()"> Add new Location</button>
+        </div>
+        <div class="review-cards">
+            <div>5</div>
+            <p>Cars</p>
+        </div>
+        <div class="review-cards">
+            <div>5</div>
+            <p>Cars</p>
+        </div>
+        <div class="review-cards">
+            <div>5</div>
+            <p>Cars</p>
+        </div>
+        <div class="review-cards">
+            <div>5</div>
+            <p>Cars</p>
+        </div>
+    </div>
+
+    <!-- Dashboard -3 -->
+    <div id="carwash3">
+
+        <form>
+            <h2>Car > Add new booking </h2>
+            <div class="inputs">
+                <label for="clientName">Client name</label>
+                <input id="clientName" type="text">
+                <label for="">Client email</label>
+                <input type="text">
+            </div>
+            <div class="inputs">
+                <label for="">Vehicle model</label>
+                <input type="text" placeholder="- Select model -">
+                <label for="">Price plan</label>
+                <input type="text" placeholder="- Select plan -">
+            </div>
+            <div class="inputs">
+                <label for="">Booking date</label>
+                <input type="date">
+                <label for="">Return date</label>
+                <input type="text">
+            </div>
+            <div class="inputs">
+                <label for="">Location</label>
+                <input type="text">
+            </div>
+            <button type="submit">Save Details</button>
+        </form>
+    </div>
+    <!-- Dashboard 4 -->
+
+    <div id="bookings">
+        <h2>Booking</h2>
+        <p>This is quick review of your account information</p>
+        <div class="user-search">
+            <img src="search.png" alt="">
+            <input type="search" placeholder="Search for user">
+        </div>
+
+        <div class="booking-number">
+            <span class="total-booking">1</span>
+            <span>Total number if bookings</span>
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <th>Name of the client</th>
+                    <th>Vehicle model</th>
+                    <th>Booking Date</th>
+                    <th>Return date</th>
+                    <th>Location</th>
+                    <th>Plan</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hello</td>
+                        <td>Why</td>
+                        <td>Hello</td>
+                        <td>Who</td>
+                        <td>Are</td>
+                    </tr>
+                    <tr>
+                        <td>Hello</td>
+                        <td>Why</td>
+                        <td>Hello</td>
+                        <td>Who</td>
+                        <td>Are</td>
+                    </tr>
+                    <tr>
+                        <td>Hello</td>
+                        <td>Why</td>
+                        <td>Hello</td>
+                        <td>Who</td>
+                        <td>Are</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <button>Previous</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>Next</button>
+        </div>
+
+    </div>
+
+
+    <!-- Dashboard -->
+    <div id="dashboard">
+        <div class="dashboard-title">
+            <h2>Dashboard</h2>
+            <p>This is a quick review of your acccount information</p>
+        </div>
+        <div class="summary">
+            <span></span>
+            <span>30</span>
+            <span>Bookings</span>
+            <span>View all booking</span>
+        </div>
+        <div class="summary">
+            <span></span>
+            <span>$500</span>
+            <span>Income</span>
+            <span>View the total income</span>
+        </div>
+        <div class="summary">
+            <span></span>
+            <span>20</span>
+            <span>Car wash</span>
+            <span>View the total in wash</span>
+        </div>
+        <div class="summary">
+            <span></span>
+            <span>2</span>
+            <span>Rejects</span>
+            <span>View the total problems</span>
+        </div>
+
+
+        <div class="cards">
+            <div class="card-titles">
+                <span>Bookings</span>
+                <a href="">Go to bookings >></a>
+            </div>
+            <div class="main-body">
+                <span>20 Car bookings</span>
+                <span>10 Bikes bookings</span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-titles">
+                <span>Requestss</span>
+                <a href="">Go to request >></a>
+            </div>
+            <div class="main-body">
+                <span>5 personal req</span>
+                <span>5 company req</span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-titles">
+                <span>Car wash</span>
+                <a href="">Go to car wash >></a>
+            </div>
+            <div class="main-body">
+                <span>20 Cars in wash</span>
+                <span>50 Bikes in wash</span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-titles">
+                <span>Notifications</span>
+                <a href="">Go to notifications >></a>
+            </div>
+            <div class="main-body">
+                <span>10 Unreads</span>
+                <span>5 Mark as read</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+
+    <script>
+        let dashboard = document.getElementById('dashboard');
+        let feedback = document.getElementById('');
+        let booking = document.getElementById('bookings')
+        let reports = document.getElementById('');
+        let carwash2 = document.getElementById('carwash2');
+        let carwash1 = document.getElementById('carwash1');
+        let carwash3 = document.getElementById('carwash3');
+        let notification = document.getElementById('');
+        let setting = document.getElementById('');
+
+
+        function showDashboard() {
+            this.style.backgroundColor='#808080';
+            dashboard.style.display = 'block';
+            carwash1.style.display = 'none';
+            carwash2.style.display = 'none';
+            carwash3.style.display = 'none';
+            booking.style.display = 'none';
+
+        }
+        function showFeedback() {
+            dashboard.style.display = 'none';
+            carwash1.style.display = 'none';
+            carwash2.style.display = 'none';
+            carwash3.style.display = 'none';
+            booking.style.display = 'none';
+        }
+
+
+        function showBooking() {
+            dashboard.style.display = 'none';
+            booking.style.display = 'block';
+            carwash1.style.display = 'none';
+            carwash2.style.display = 'none';
+            carwash3.style.display = 'none';
+
+        }
+
+
+        function showReports() {
+            dashboard.style.display = 'none';
+            carwash1.style.display = 'none';
+            carwash2.style.display = 'none';
+            carwash3.style.display = 'none';
+            booking.style.display = 'none';
+
+        }
+
+
+        function showCarwash1() {
+            carwash1.style.display = 'block';
+            carwash2.style.display = 'none';
+            carwash3.style.display = 'none';
+            dashboard.style.display = 'none';
+            booking.style.display = 'none';
+
+        }
+        function showCarwash2() {
+            carwash2.style.display = 'block';
+            carwash1.style.display = 'none';
+            carwash3.style.display = 'none';
+            dashboard.style.display = 'none';
+            booking.style.display = 'none';
+
+        }
+        function showCarwash3() {
+            carwash3.style.display = 'block';
+            carwash1.style.display = 'none';
+            carwash2.style.display = 'none';
+            dashboard.style.display = 'none';
+            booking.style.display = 'none';
+
+        }
+        function showNotifications() {
+            dashboard.style.display = 'none';
+            carwash1.style.display = 'none';
+            carwash2.style.display = 'none';
+            carwash3.style.display = 'none';
+            booking.style.display = 'none';
+
+
+
+        }
+        function showSetting() {
+            dashboard.style.display = 'none';
+            carwash1.style.display = 'none';
+            carwash2.style.display = 'none';
+            carwash3.style.display = 'none';
+            booking.style.display = 'none';
+
+
+        }
+        function logout() {
+            dashboard.style.display = 'none';
+            carwash1.style.display = 'none';
+            carwash2.style.display = 'none';
+            carwash3.style.display = 'none';
+        }
+    </script>
+
+
+</body>
+
+</html>

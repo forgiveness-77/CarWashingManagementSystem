@@ -1,0 +1,78 @@
+body,html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bluePart{
+    background: rgba(34, 34, 253, 1);
+    color: white;
+   height: 100vh;
+}
+.navigation{
+    display: flex;
+    /* grid-template-columns: repeat(7,170px); */
+}
+.navbtn{
+background: #000;
+color:white;
+font-weight: bolder;
+height: 40px;
+width: 100px;
+border-radius: 10px;
+margin-top: 10px;
+cursor: pointer;
+}
+.menu{
+    margin-left: 100px;
+    
+}
+
+.menuWrapper{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.intro{
+   font-size: 20px;
+   width: 20%;
+   text-align: center;
+   margin-top: 100px;
+   /* margin-bottom: 100px; */
+   padding: 50px;
+}
+.introDiv{
+    display: flex;
+    margin-top: 100px;
+}
+.introImg{
+    width: 484px;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 350px;
+}
+.adminBtn{
+    background:orange;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 120px;
+    margin-top: -90px;
+    position: absolute;
+    cursor:pointer; 
+}
+.about{
+    color: rgba(34, 34, 253, 1);
+}
+.aboutDiv{
+    margin-left: 200px;
+}
+.discover{
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+     padding: 50px;
+}

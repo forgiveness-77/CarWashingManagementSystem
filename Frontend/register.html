@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./register.css" />
+</head>
+
+<body>
+    <div class="login-form">
+        <div class="header">
+            <h2>Welcome back to our group</h2>
+        </div>
+        <form action="../users/createUser.php" method="post" enctype="multipart/form-data">
+            <h3>Login</h3>
+            <label for="firstname">firstname:</label>
+            <input name="fname" id="username" type="text">
+            <label for="lastname">lastname:</label>
+            <input name="lname" id="username" type="text">
+            <label for="email">Email address:</label>
+            <input name="email"  id="email" type="email">
+            <label for="password">Password:</label>
+            <input name="password" id="password" type="password">
+            <label for="username">Username:</label>
+            <input name="username" id="username" type="text">
+            <button type="submit" name="submit">Register</button>
+            <button class="register-as"><i class="fab fa-google google-icon"></i>    Register with google</button>
+            <button class="register-as"><i class="fab fa-apple"></i>     Register with apple</button>
+        </form>
+    </div>
+    <div style="display: inline-block;">
+        <img src="./washing-car-png-hd-car-wash-beauty-care-services-rinse-car-wash-service-industry-png-and-psd-650 1.svg"
+            alt="">
+    </div>
+    <script src="https://kit.fontawesome.com/7e86ac2f98.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

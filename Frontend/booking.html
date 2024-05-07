@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="booking.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="bg-grey-400 text-black py-4 py-3">
+        <ul class="logo">AUTO WASH</ul>
+        <ul class="header-links">Home</ul>
+        <ul class="header-links">Services</ul>
+        <ul class="header-links">Prices</ul>
+        <ul class="header-links">About us</ul>
+        <ul class="header-links">Contact</ul>
+        <ul class="list"><i class="fas fa-list-ul"></i></ul>
+        <ul><button type="button" class="book-now">Book Now</button></ul>
+    </header>
+
+
+    <!-- Contact us -->
+    <div class="contact-us">
+        <ul>
+            <h2><i class="fab fa-whatsapp"></i> Whatsapp</h2>
+            <div>0788888888</div>
+        </ul>
+        <ul>
+            <h2> <i class="fas fas fas fa-phone"></i> Phone call</h2>
+            <div>0788888888</div>
+        </ul>
+        <ul>
+            <h2> <i class="fab fa-facebook"></i> Facebook</h2>
+            <div>Auto wash</div>
+        </ul>
+        <ul>
+
+            <h2> <i class="fab fa-instagram"></i> Instagram</h2>
+            <div>Auto_wash24</div>
+        </ul>
+        <ul>
+            <h2> <i class="fab fa-linkedin"></i> Linkedin</h2>
+            <div>Auto wash</div>
+        </ul>
+    </div>
+
+    <div class="page-head">
+        <h1>Full car wash services with a low and cheap prices for the user preference and enjoyment</h1>
+    </div>
+
+<!-- Pop up message -->
+    <div class="pop-up">
+        <button type="button" class="close-button"><img src="./close.png" alt=""></button>
+        <h4>Thank you for making your car wash booking</h4>
+        <button type="button" class="done-button">Done</button>
+    </div>
+
+    <!-- Book car form -->
+    <div class="book-car-form"> 
+        <h3>Book car wash now </h3>
+        <form action="../booking/handleBook.php" method="post" autocomplete="new-password">
+            <input type="text" name="user_id" class="max-width" placeholder="user id">
+            <input type="text" name="username" class="max-width" placeholder="Enter your name">
+            <input type="email" name="email" class="max-width" placeholder="Enter your email" >
+            <input type="text" name="user_location" class="min-width" id="left" list="locations" placeholder="User Location">
+            <input type="text" name="user_plan" class="min-width"  list="user-plan" placeholder="User Plan" ><br>
+            <div class="wheel-type">
+                
+                <input type="radio" name="model" value="Two Wheeler" placeholder="Two wheeler">
+                <span>Two wheeler</span><br>
+                <input type="radio" name="model" value="Four Wheeler" placeholder="Four wheeler">
+               <span>Four wheeler</span>
+                <input class="date" type="date" name="date" class="min-width" placeholder="Date" >
+            </div>
+            <button type="submit" name="submit">Submit</button>
+
+        </form>
+    </div>
+    <div class="car-wash">
+        <img src="./carwash.svg" alt="car">
+    </div>
+
+    <div class="footer">
+        <div class="logo-footer">AUTO WASH</div>
+        <div class="about">
+            <h3>About us</h3>
+            <p>Discover the autolux wash and various other types of washes which makes your car last longer for more
+                life</p>
+        </div>
+        <div class="service">
+            <ul>
+                <h3>Services</h3>
+            </ul>
+            <ul>
+                <a href="">Home</a>
+            </ul>
+            <ul>
+                <a href="">Services</a>
+            </ul>
+            <ul>
+                <a href="">Contacts</a>
+            </ul>
+            <ul>
+                <a href="">Chat</a>
+            </ul>
+            <ul>
+                <a href="">Team</a>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul>
+                <h3>Contact</h3>
+            </ul>
+            <ul>
+                <a href="">Home</a>
+            </ul>
+            <ul>
+                <a href="">Services</a>
+            </ul>
+            <ul>
+                <a href="">Contacts</a>
+            </ul>
+            <ul>
+                <a href="">Chat</a>
+            </ul>
+            <ul>
+                <a href="">Team</a>
+            </ul>
+        </div>
+        <div class="quick-link">
+            <ul>
+                <h3>Quick link</h3>
+            </ul>
+            <ul>
+                <a href="">Home</a>
+            </ul>
+            <ul>
+                <a href="">Services</a>
+            </ul>
+            <ul>
+                <a href="">Contacts</a>
+            </ul>
+            <ul>
+                <a href="">Chat</a>
+            </ul>
+            <ul>
+                <a href="">Team</a>
+            </ul>
+        </div>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/7e86ac2f98.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
